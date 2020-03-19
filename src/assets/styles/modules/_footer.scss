@@ -1,0 +1,14 @@
+.footer { padding: 1em; background-color:$gray-100; color:$primary-color; z-index: 1; right: 0; margin-left: 200px; }
+.footer p {color:$primary-color;}
+.footer a, 
+.footer a:active, 
+.footer a:hover,
+.footer a:focus,
+.footer a:visited { color:$primary-color } 
+.footer .filter-img{ mix-blend-mode: exclusion }
+.footer.fixed { position: fixed; bottom: 0; }
+
+@media (max-width: $tablet) {
+ .footer, 
+ .footer.fixed { position: relative; margin-left: 0; margin-top: 60px; width: 100% !important; overflow: hidden; }
+}

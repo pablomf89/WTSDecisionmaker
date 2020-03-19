@@ -1,0 +1,39 @@
+.icon-open{
+    -ms-transform: rotate(0deg); /* IE 9 */
+    -webkit-transform: rotate(0deg); /* Safari 3-8 */
+    transform: rotate(0deg);
+}
+
+.icon-close{
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari 3-8 */
+    transform: rotate(180deg);
+    
+    
+}
+
+.accordion-container .accordion-header{
+    background-color: $box-colour;
+    cursor: pointer;
+}
+
+.accordion-container .accordion-body{
+    border: $global-border;
+    border-radius: $border-radius;
+    @extend .smooth-transition;
+} 
+
+.accordion-body {
+ 
+    max-height: 900vh;
+     
+}
+
+.accordion-close{
+ 
+    max-height: 0px;
+    
+    overflow: hidden;
+    opacity: 0;
+     
+}
