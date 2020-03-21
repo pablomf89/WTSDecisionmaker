@@ -68,10 +68,5 @@ a {
   text-decoration: none;
   @extend .smooth-transition-color;
 }
-a:hover,
-a:focus,
-a.active {
-  text-decoration: underline;
-  color: $active-color;
-}
+
 /********** END FONT **********/
