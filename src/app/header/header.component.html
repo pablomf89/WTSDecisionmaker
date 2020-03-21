@@ -12,9 +12,11 @@
     </button>
   </mat-toolbar>
 
-  <mat-toolbar color="primary">
+  <mat-toolbar color="accent">
     <mat-toolbar-row>
-      <button mat-button>Dashboard</button>
+      <a mat-button [routerLink]="['/global']">Global elements</a>
+      <a mat-button [routerLink]="['/']">Dashboard</a>
+
       <button mat-button>DMN models</button>
       <button mat-button>Reportings</button>
       <button mat-button>Upload</button>

@@ -44,10 +44,12 @@ import { MatBadgeModule } from "@angular/material/badge";
 
 import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
+import { WizardComponent } from "./wizard/wizard.component";
 
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
   { path: "global", component: GlobalElementsComponent },
+  { path: "wizard", component: WizardComponent }
 ];
 
 @NgModule({
@@ -57,6 +59,7 @@ const appRoutes: Routes = [
     FooterComponent,
     GlobalElementsComponent,
     HomeComponent,
+    WizardComponent
   ],
   imports: [
     RouterModule.forRoot(
