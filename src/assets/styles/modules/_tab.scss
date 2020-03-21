@@ -1,0 +1,40 @@
+/*wrapper*/
+.tabs-wrapper {}
+.tabs-wrapper:after {    display: block; content: " "; height: 1px; clear: both;}
+
+/*tab buttons*/
+.tabs-wrapper .tabs  { overflow: hidden; border: $global-border;  }
+.tabs-wrapper .tabs .tab-link { @extend .btn; float: left;  margin: 0; border-radius: 0px; }
+.tabs-wrapper .tabs .tab-link.active { background-color: $active-color; }
+
+/*tab contents*/
+.tabs-wrapper .tab-contents { padding: $global-padding;  border: 1px solid #ccc; display: block;  }
+
+
+/*tabs top*/
+.tabs-wrapper.top .tab-contents { border-top: none; }
+/*tabs bottom*/
+.tabs-wrapper.bottom .tab-contents { border-bottom: none; }
+
+/*tabs left*/
+.tabs-wrapper.left { display: flex; }
+.tabs-wrapper.left .tabs { display: block;   float: left; width: 300px; }
+.tabs-wrapper.left .tabs .tab-link { float:  none; display: block; width: 100% }
+.tabs-wrapper.left .tab-contents { display: inline-block; position: relative; left: 0;  width: calc(100% - 300px); border: 1px solid #ccc; border-left: none; }
+
+
+
+/*tabs right*/
+.tabs-wrapper.right { display: flex; }
+.tabs-wrapper.right .tabs { display: block;   float: left; width: 300px; }
+.tabs-wrapper.right .tabs .tab-link { float:  none; display: block; width: 100% }
+.tabs-wrapper.right .tab-contents { display: inline-block; position: relative; left: 0;  width: calc(100% - 300px); border: 1px solid #ccc; border-right: none; }
+
+
+
+  
+@media (max-width: $tablet) {
+    .tabs-wrapper.right,.tabs-wrapper.left  { flex-direction: column; }
+    .tabs-wrapper.left .tabs, .tabs-wrapper.right .tabs { display: block;  width: 100%; }
+    .tabs-wrapper.right .tab-contents,.tabs-wrapper.left .tab-contents  { display: block; width: 100%;}
+}

@@ -1,0 +1,138 @@
+.table-responsive {
+  overflow-x: auto;
+}
+
+.table-responsive table{
+  max-width: none;
+
+}
+
+.table-container{
+  overflow-x:auto;
+}
+
+table{
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.search-bar-wrapper .form-control {
+  border-radius: 0;
+}
+
+#cursorText {
+  position: absolute;
+  border: 1px solid #dee2e6;
+}
+
+.form-inline .form-check {
+  justify-content: inherit;
+}
+
+.dropdown-menu {
+  padding: 0;
+}
+
+.table thead th {
+  padding-right: 50px;
+}
+
+th .sortable-icon{
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  width: 15px;
+  height: 15px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  pointer-events: none;
+  font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+}
+
+th .sortable-icon:before {
+  content: "\f0dd";
+  opacity: 0.3;
+  position: absolute;
+    top: 0;
+    left: 0;
+}
+
+th .sortable-icon:after {
+  content: "\f0de";
+  opacity: 0.3;
+  position: absolute;
+    top: 0;
+    left: 0;
+}
+
+th.asc .sortable-icon:before {
+  opacity: 1;
+}
+
+th.desc .sortable-icon:after {
+  opacity: 1;
+}
+
+.results .list-group {
+  padding: 0;
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.resultsTable {
+  a {
+    color: black;
+    text-decoration: none;
+    z-index: 0;
+    display: block;
+    min-height: 100%;
+    min-width: 100%;
+    &:hover {
+      text-decoration: none;
+    }
+    &.fullLink::after {
+      z-index: 0;
+      display: block;
+      min-height: 100%;
+      min-width: 100%;
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+      pointer-events: auto;
+      content: "";
+    }
+  }
+
+  tbody {
+    tr:hover {
+      background-color: $gray-600 !important;
+      color: white;
+    }
+    td {
+      position: relative;
+    }
+  }
+}
+
+.no-data-found{
+  padding: 10px;
+}
+
+.table thead th {
+  user-select: none;
+  vertical-align: middle;
+}
+
+table.striped-table{
+  tr:nth-child(even) {background-color: $gray-500;}
+}
+
+table.dark-table{
+  tr{
+    background-color: $gray-800;
+    color: white;
+  }
+}

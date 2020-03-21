@@ -1,0 +1,112 @@
+@import "assets/styles/main.scss";
+@import "~@angular/material/theming";
+@include mat-core();
+$md-mcgpalette0: (
+  50: #eaeced,
+  100: #cbced2,
+  200: #a8aeb4,
+  300: #858e96,
+  400: #6b7580,
+  500: #515d69,
+  600: #4a5561,
+  700: #404b56,
+  800: #37414c,
+  900: #27303b,
+  A100: #86bcff,
+  A200: #53a0ff,
+  A400: #2083ff,
+  A700: #0775ff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #ffffff,
+    A700: #ffffff
+  )
+);
+
+$md-wtsprimary: (
+  50: #f9e0e7,
+  100: #f0b3c2,
+  200: #e68099,
+  300: #db4d70,
+  400: #d42652,
+  500: #cc0033,
+  600: #c7002e,
+  700: #c00027,
+  800: #b90020,
+  900: #ad0014,
+  A100: #ffd7d9,
+  A200: #ffa4aa,
+  A400: #ff717a,
+  A700: #ff5862,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #ffffff,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #000000
+  )
+);
+$md-wtsaccent: (
+  50: #e0edf1,
+  100: #b3d2dd,
+  200: #80b4c7,
+  300: #4d96b0,
+  400: #26809f,
+  500: #00698e,
+  600: #006186,
+  700: #00567b,
+  800: #004c71,
+  900: #003b5f,
+  A100: #90ccff,
+  A200: #5db5ff,
+  A400: #2a9eff,
+  A700: #1092ff,
+  contrast: (
+    50: #000000,
+    100: #000000,
+    200: #000000,
+    300: #000000,
+    400: #ffffff,
+    500: #ffffff,
+    600: #ffffff,
+    700: #ffffff,
+    800: #ffffff,
+    900: #ffffff,
+    A100: #000000,
+    A200: #000000,
+    A400: #000000,
+    A700: #ffffff
+  )
+);
+
+$my-app-primary: mat-palette($md-wtsprimary);
+$my-app-accent: mat-palette($md-mcgpalette0, 500, 900, A100);
+$my-app-warn: mat-palette($mat-deep-orange);
+$my-app-theme: mat-light-theme($my-app-primary, $my-app-accent, $my-app-warn);
+@include angular-material-theme($my-app-theme);
+.alternate-theme {
+  $alternate-primary: mat-palette($mat-light-blue);
+  $alternate-accent: mat-palette($mat-yellow, 400);
+  $alternate-theme: mat-light-theme($alternate-primary, $alternate-accent);
+  @include angular-material-theme($alternate-theme);
+}

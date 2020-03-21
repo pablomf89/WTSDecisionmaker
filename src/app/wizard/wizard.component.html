@@ -1,0 +1,175 @@
+<div class="box-3">
+  <div class="inner">
+    <mat-card class="example-card">
+      <h3>Info</h3>
+      <p>
+        Andouille ground round pork loin, boudin kielbasa landjaeger alcatra
+        corned beef meatloaf porchetta.
+      </p>
+      <p>
+        Kevin ham pancetta jowl, pig biltong brisket ribeye beef prosciutto
+        picanha andouille. Shankle beef kielbasa ham beef ribs sirloin.
+      </p>
+
+      <button mat-button color="accent">
+        <mat-icon>attachment</mat-icon> Download PDF Document</button
+      >&nbsp;</mat-card
+    >
+  </div>
+</div>
+
+<div class="box-9">
+  <div class="inner">
+    <p class="h6">Prüfungsvorang</p>
+    <h2>Fotoshooting 2015</h2>
+
+    <mat-vertical-stepper [linear]="isLinear" #stepper>
+      <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel
+            >Flank leberkas sausage biltong shank brisket, fatback boudin ball
+            tip andouille salami ham hock. ?</ng-template
+          >
+          <p>
+            <small
+              >Ribeye strip steak tenderloin, burgdoggen tongue kevin kielbasa
+              buffalo cupim beef meatball beef ribs brisket short loin.</small
+            >
+          </p>
+          <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input
+              matInput
+              placeholder="Last name, First name"
+              formControlName="firstCtrl"
+              required
+            />
+          </mat-form-field>
+
+          <div>
+            <button mat-raised-button color="primary" matStepperNext>
+              Next
+            </button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel
+            >Pastrami beef tongue, doner short ribs pig sausage capicola ham
+            landjaeger leberkas pork fatback pancetta.</ng-template
+          >
+          <p>
+            <small
+              >Ribeye strip steak tenderloin, burgdoggen tongue kevin kielbasa
+              buffalo cupim beef meatball beef ribs brisket short loin.</small
+            >
+          </p>
+          <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input
+              matInput
+              placeholder="Last name, First name"
+              formControlName="firstCtrl"
+              required
+            />
+          </mat-form-field>
+          <div>
+            <button mat-raised-button color="primary" matStepperNext>
+              Next
+            </button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel
+            >Leberkas pork belly meatloaf pancetta pork loin.</ng-template
+          >
+          <p>
+            <small
+              >Ribeye strip steak tenderloin, burgdoggen tongue kevin kielbasa
+              buffalo cupim beef meatball beef ribs brisket short loin.</small
+            >
+          </p>
+          <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input
+              matInput
+              placeholder="Last name, First name"
+              formControlName="firstCtrl"
+              required
+            />
+          </mat-form-field>
+          <div>
+            <button mat-raised-button color="primary" matStepperNext>
+              Next
+            </button>
+          </div>
+        </form>
+      </mat-step>
+      <mat-step [stepControl]="firstFormGroup">
+        <form [formGroup]="firstFormGroup">
+          <ng-template matStepLabel
+            >Sausage biltong shank brisket, fatback boudin ball tip andouille
+            salami ?</ng-template
+          >
+          <p>
+            <small
+              >Ribeye strip steak tenderloin, burgdoggen tongue kevin kielbasa
+              buffalo cupim beef meatball beef ribs brisket short loin.</small
+            >
+          </p>
+          <mat-form-field>
+            <mat-label>Name</mat-label>
+            <input
+              matInput
+              placeholder="Last name, First name"
+              formControlName="firstCtrl"
+              required
+            />
+          </mat-form-field>
+          <div>
+            <button mat-raised-button color="primary" matStepperNext>
+              Next
+            </button>
+          </div>
+        </form>
+      </mat-step>
+
+      <mat-step>
+        <ng-template matStepLabel>Prüfungsergebnis</ng-template>
+        <div class="clearfix mb10"></div>
+        <div class="notification notification-success">
+          <div class="icon">
+            <i><mat-icon>info</mat-icon></i>
+          </div>
+          <div class="copy">
+            <p>
+              <strong>Info:</strong> Bacon ipsum dolor amet sirloin 5000 - 10000
+              alcatra shankle 45% bemessen
+            </p>
+          </div>
+        </div>
+        <p>
+          Bacon ipsum dolor amet sirloin boudin pork belly alcatra shankle short
+          ribs flank turducken ham jowl shoulder. Biltong corned beef pastrami
+          spare ribs kevin.
+        </p>
+        <p>
+          Biltong corned beef pastrami spare ribs kevin.
+        </p>
+        <div>
+          <!-- <button mat-raised-button matStepperPrevious>Back</button> -->
+          <button mat-raised-button color="primary" (click)="stepper.reset()">
+            <mat-icon>done</mat-icon>&nbsp; Abschließen
+          </button>
+          <button mat-button (click)="stepper.reset()">
+            <mat-icon>replay</mat-icon>&nbsp;Reset</button
+          >&nbsp;
+        </div>
+      </mat-step>
+    </mat-vertical-stepper>
+  </div>
+</div>
+<div class="clearfix"></div>
