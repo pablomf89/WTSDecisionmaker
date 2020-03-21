@@ -41,6 +41,13 @@ import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatButtonModule } from "@angular/material/button";
 import { MatBadgeModule } from "@angular/material/badge";
+
+import { RouterModule, Routes } from "@angular/router";
+
+const appRoutes: Routes = [
+  { path: "global", component: GlobalElementsComponent }
+];
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -49,6 +56,11 @@ import { MatBadgeModule } from "@angular/material/badge";
     GlobalElementsComponent
   ],
   imports: [
+    RouterModule.forRoot(
+      appRoutes,
+
+      { enableTracing: true, useHash: true } // <-- debugging purposes only
+    ),
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
