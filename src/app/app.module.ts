@@ -43,9 +43,11 @@ import { MatButtonModule } from "@angular/material/button";
 import { MatBadgeModule } from "@angular/material/badge";
 
 import { RouterModule, Routes } from "@angular/router";
+import { HomeComponent } from "./home/home.component";
 
 const appRoutes: Routes = [
-  { path: "global", component: GlobalElementsComponent }
+  { path: "", component: HomeComponent },
+  { path: "global", component: GlobalElementsComponent },
 ];
 
 @NgModule({
@@ -53,7 +55,8 @@ const appRoutes: Routes = [
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    GlobalElementsComponent
+    GlobalElementsComponent,
+    HomeComponent,
   ],
   imports: [
     RouterModule.forRoot(
