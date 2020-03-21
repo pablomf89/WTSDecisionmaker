@@ -45,7 +45,7 @@ import { MatBadgeModule } from "@angular/material/badge";
 import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
 import { WizardComponent } from "./wizard/wizard.component";
-
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
   { path: "global", component: GlobalElementsComponent },
@@ -70,6 +70,8 @@ const appRoutes: Routes = [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FormsModule,
+    ReactiveFormsModule,
     MatCheckboxModule,
     MatInputModule,
     MatAutocompleteModule,
