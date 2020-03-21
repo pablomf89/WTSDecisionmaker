@@ -1,0 +1,35 @@
+html {scroll-behavior: smooth;}
+body { margin: 0; font-family: $global-font-family;}
+strong {}
+ol, ul { margin: 0 0 $global-margin*2  $global-margin*2; padding: 0; }
+li { margin-bottom: $global-margin/2;  }
+img { max-width: 100%; }
+table { border-collapse: collapse; border-spacing: 0; margin: 0 0 $global-margin*2  0; width: 100%;  border: $global-border; }
+table tr {} 
+table td,
+table th  { border: $global-border; padding: $global-padding/2; }
+pre { margin-bottom: $global-margin*2 ; }
+hr { border-bottom: $global-border; }
+
+.responsive-table { max-width: 100%; overflow-x: auto; }
+
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

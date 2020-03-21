@@ -1,0 +1,30 @@
+
+/********** START HACKS **********/
+/*content-fit contain fix for ie*/ 
+.custom-object-fit { position: relative; background-size: contain; background-position: center center; background-repeat:no-repeat;}
+.custom-object-fit img { opacity: 0; }
+
+/********** CHROME AND SAFARI **********/
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+
+}
+
+/********** FIREFOX **********/
+@-moz-document url-prefix() { 
+
+}
+
+/********** IE9 **********/
+@media screen and (min-width:0\0) {
+
+} 
+
+/********** IE8 **********/
+@media \0screen {  
+.box-container { width: 1140px; }
+}
+
+/********** IE7 **********/
+ .box-container { *width: 1140px; }
+
+/********** END HACKS **********/
