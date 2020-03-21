@@ -1,0 +1,171 @@
+ 
+.notification { position: relative; margin-bottom: $global-margin*2; }
+.notification .icon { display: block; height: 100%; width: 60px; line-height: 60px; text-align: center; position: absolute; top: 0; left: 0; color: #FFFFFF; font-size: 20px; }
+.notification .icon .fa { line-height: 60px;  font-size: 20px; }
+.notification .copy { padding: 20px 20px 20px 80px; }
+.notification .copy p { margin: 0; }
+
+.notification-info{
+    background: lighten($info-color, 45%); color: $info-color !important;;
+    border: 1px solid $info-color;
+    border-radius:$border-radius;
+    &>.copy>*{
+        color: $info-color;
+    }
+}
+.notification-info .icon  { background: $info-color; color:white }
+
+.notification-warning{
+    background: lighten($warning-color, 55%); color: $warning-color !important;;
+    border: 1px solid $warning-color;
+    border-radius: $border-radius;
+    &>.copy>*{
+        color: $warning-color;
+    }
+}
+.notification-warning .icon  { background: $warning-color; color:white }
+
+.notification-error{
+    background: lighten($error-color, 25%); color: $error-color !important;;
+    border: 1px solid $error-color;
+    border-radius: $border-radius;
+    &>.copy>*{
+        color: $error-color;
+    }
+}
+.notification-error .icon  { background: $error-color; color:white }
+
+.notification-success{
+    background: lighten($success-color, 40%); color: $success-color !important;;
+    border: 1px solid $success-color;
+    border-radius: $border-radius;
+    &>.copy>*{
+        color: $success-color;
+    }
+}
+.notification-success .icon  { background: $success-color; color:white }
+
+.notification-loading{
+    background: lighten($primary-color, 50%); color: $primary-color !important;;
+    border: 1px solid $primary-color;
+    border-radius: $border-radius;
+    &>.copy>*{
+        color: $primary-color;
+    }
+}
+.notification-loading .icon  { background: $primary-color; color:white }
+
+
+
+//end new styles
+
+.notifcations-container{
+    position: fixed;
+    bottom: 1em;
+    right: 1em;
+    width: 30vw;
+    display: flex;
+    z-index: 2;
+    flex-direction: column-reverse;
+}
+
+@media (max-width:$mobile){
+    .notifcations-container{
+        width: 90vw;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.notifications-item{
+    background: #fff;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    padding-left: 1.5em;
+    position: relative;
+    overflow: hidden;
+    border-radius: $border-radius;
+    &.success {
+        background-color: rgba(200, 247, 197, 0.8);
+        color: rgba(30, 130, 76, 1) !important;
+        border: 1px solid rgba(30, 130, 76, 0.3) !important;
+        &>.inner>*{
+            color: rgba(30, 130, 76, 1) !important;
+        }
+        
+      }
+      &.warning {
+        background-color: rgba(253, 227, 167, 0.8);
+        color: rgba(211, 84, 0, 1) !important;
+        border: 1px solid rgba(211, 84, 0, 0.3) !important;
+        &>.inner>*{
+            color: rgba(211, 84, 0, 1) !important;
+        }
+        
+      }
+      &.error {
+        background-color: rgba(241, 169, 160, 0.8);
+        color: rgba(150, 40, 27, 1) !important;
+        border: 1px solid rgba(150, 40, 27, 0.3) !important;
+        &>.inner>*{
+            color: rgba(150, 40, 27, 1) !important;
+        }
+        
+      }
+      &.info {
+        background-color: rgba(197, 239, 247, 0.8);
+        color: rgba(37, 116, 169, 1) !important;
+        border: 1px solid rgba(37, 116, 169, 0.3) !important;
+        &>.inner>*{
+            color: rgba(37, 116, 169, 1) !important;
+        }
+        
+      }
+      &.default {
+        background-color: rgba(204, 204, 204, 0.8);
+        color: black !important;
+        border: 1px solid rgba(0,0,0,0.3) !important;
+        &>.inner>*{
+            color: black !important;
+        }
+        
+      }
+    @extend .smooth-transition;
+
+}
+
+
+
+.notifications-close{
+    position: absolute;
+    top: 1em;
+    right: 1em;
+    cursor: pointer;
+}
+
+.notifications-item-shown {
+    max-height: 100vh;
+  
+    /*-webkit-transition: max-height 0.3s ease-in;
+    -moz-transition: max-height 0.3s ease-in;
+    -ms-transition: max-height 0.3s ease-in;
+    -o-transition: max-height 0.3s ease-in;
+    transition: max-height 0.3s ease-in;*/
+  }
+  
+  .notifications-item-hidden {
+    max-height: 0em;
+  
+    /*-webkit-transition: max-height 0.4s ease-out;
+    -moz-transition: max-height 0.4s ease-out;
+    -ms-transition: max-height 0.4s ease-out;
+    -o-transition: max-height 0.4s ease-out;
+    transition: max-height 0.4s ease-out;*/
+  }
+
+  .notification-type-icon{
+      position: absolute;
+      top: 25px;
+      left: 0.5em;
+      font-size: 20px;
+  }

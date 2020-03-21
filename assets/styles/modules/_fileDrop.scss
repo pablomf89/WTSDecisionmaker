@@ -1,0 +1,281 @@
+.file-drop-container{
+
+    background-color: lighten($active-color, 30%);
+    border: 3px dashed $active-color;
+    cursor: pointer;
+    filter: brightness(100%);
+    transition: filter 0.2s;
+    padding: 1em;
+    text-align: center;
+    border-radius: $border-radius;
+
+}
+
+.file-drop-container:hover, .file-drop-container.fileEnter{
+
+    filter: brightness(90%);
+    transition: filter 0.2s;
+    
+}
+.input-wrapper.file-drop-input-wrapper.error .file-drop-container {
+    background-color: lighten($red, 30%);
+    border-color: $red;
+}
+
+
+.file-drop-placeholder{
+    color: $primary-color;
+    text-align: center;
+    margin: 0.5em;
+}
+
+.file-drop-placeholder-icon{
+    color: white;
+    font-size: 45px;
+    background-color: $primary-color;
+    padding: 0.7em;
+    border-radius: 50%;
+}
+
+.file-drop-input{
+    display: none;
+
+}
+
+.file-drop-item-preview, .file-drop-item-preview-error{
+    color: white;
+    text-align: center;
+    display: inline-block;
+    width: 7em;
+    margin: 0.5em;
+    background-color: rgba(48, 78, 137, 0.6);
+    padding: 1em 0.2em;
+    border-radius: 15px 02px 15px 0px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap !important;
+    word-wrap: normal !important;
+    -ms-text-overflow: ellipsis;
+    position: relative;
+
+    & span{
+        display: inline-block;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+    }
+}
+
+.file-drop-item-preview-error{
+    background-color: rgba(220, 53, 69, 0.8);
+}
+
+.file-drop-item-preview2, .file-drop-item-preview-error2{
+    display: flex;
+    background-color: #2f353a;
+    width: 80%;
+    margin: auto;
+    border-bottom: 1px solid #17a2b8;
+    color: white;
+    &> div:first-child{
+        padding: 0.3em;
+        margin-right: 1em;
+        color: #17a2b8;
+        font-size: 25px;
+    }
+    &> div:nth-child(2){
+        flex: 1;
+        text-align: left;
+        padding: 0.1em;
+        &>span:first-child{
+            font-weight: bold;
+            display: block;
+        }
+        &>span:nth-child(2){
+            color: #c3c3c3;
+        }
+    }
+    &>div:last-child{
+        color: #17a2b8;
+        font-size: 20px;
+        padding: 0.5em;
+    }
+}
+
+.file-drop-item-preview-shadow{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.8);
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s;
+    &>i{
+        font-size: 40px;
+        position: absolute;
+        bottom: 50%;
+        right: 50%;
+        transform: translate(50%, 50%);
+    }
+}
+
+.file-drop-item-preview:hover > .file-drop-item-preview-shadow, .file-drop-item-preview-error:hover >.file-drop-item-preview-shadow{
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+.file-drop-item-preview-error2{
+    border-bottom: 1px solid $red;
+    &> div:first-child{
+        color: $red;
+    }
+    &>div:last-child{
+        color: $red;
+    }
+
+}
+
+.file-drop-item-preview>i, .file-drop-item-preview-error>i{
+    font-size: 35px;
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.file-drop-clear span:hover{
+    filter:brightness(50%)
+}
+
+.file-drop-clear span{
+    font-size: 16px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: inherit;
+    border-radius: $border-radius;
+    padding: 0.2em;
+    margin: 0.5em;
+    padding: 0.4em 2em;
+}
+
+.file-drop-clear span.clear{
+    background-color: $red;
+    color: white;
+}
+
+.file-drop-clear span.upload{
+    background-color:$active-color;
+    color: white;
+}
+
+@media (max-width:$mobile){
+    .file-drop-item-preview, .file-drop-item-preview-error{
+        display: block;
+        width: 100%;
+        border-radius: $border-radius;
+        text-align: left;
+        padding: 0.5em;
+
+        & i {
+            display: inline;
+            font-size: 18px;
+            margin-right: 0.5em;
+        }
+
+        & span{
+            display: initial;
+        }
+
+    }
+
+    .file-drop-clear2 span {
+        padding: 0.4em 0.5em !important;
+    }
+}
+
+.file-drop-clear2{
+    background-color: #2d79c1;
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: left;
+    color: white;
+}
+
+.file-drop-clear2 span:hover {
+    filter: brightness(20%);
+}
+
+.file-drop-clear2 span {
+    font-size: 16px;
+    border-right-style: solid;
+    border-width: 1px;
+    border-color: inherit;
+    padding: 0.2em;
+    margin: 0.5em;
+    padding: 0.4em 2em;
+}
+
+.file-drop-item-preview3, .file-drop-item-preview-error3{
+    background-color: #2f353a;
+    width: 14.5em;
+    border-bottom: 1px solid #17a2b8;
+    color: white;
+    display: inline-block;
+    margin: 0.5em;
+    height: 80px;
+    overflow: hidden;
+
+    &> div:first-child{
+        padding-top: 0.3em;
+        color: #17a2b8;
+        font-size: 45px;
+        display: inline-block;
+        width: 1.5em;
+        overflow: hidden;
+        height: 100%;
+    }
+    &> div:nth-child(2){
+        text-align: left;
+        padding: 0.1em;
+        overflow: hidden;
+        display: inline-block;
+        width: 7em;
+        height: 100%;
+        &>span:first-child{
+            font-weight: bold;
+            display: block;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            word-wrap: normal !important;
+            max-height: 50px;
+            margin-bottom: 0.3em;
+
+        }
+        &>span:nth-child(2){
+            color: #c3c3c3;
+        }
+    }
+    &>div:last-child{
+        color: #17a2b8;
+        font-size: 20px;
+        padding: 0.5em;
+        display: inline-block;
+        width: 1.5em;
+        overflow: hidden;
+        height: 100%;
+    }
+}
+
+.file-drop-item-preview-error3{
+
+    border-bottom: 1px solid $red;
+
+
+    &> div:first-child{
+        color: $red;
+  
+    }
+
+    &>div:last-child{
+        color: $red;
+    }
+}
