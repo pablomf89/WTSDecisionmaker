@@ -32,47 +32,63 @@
         <li><a href="javascript:void(0);">Lorem ipsum</a></li>
         <li><a href="javascript:void(0);">Lorem ipsum</a></li>
       </ol>
-
-      <mat-form-field class="example-full-width">
-        <mat-label>Input text</mat-label>
-        <input matInput placeholder="Ex. Lorem" value="Lorem ipsum" />
-      </mat-form-field>
-
-      <!-- <mat-form-field>
-        <mat-label>Date picker</mat-label>
-        <input matInput [matDatepicker]="picker" />
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        <mat-datepicker #picker></mat-datepicker>
-      </mat-form-field> -->
+      <p>
+        <span matBadge="4" matBadgeOverlap="false" matBadgeColor="accent"
+          >Text with a badge</span
+        >
+      </p>
 
       <p>
-        <input type="text" placeholder="Input text" />
+        <mat-form-field class="example-full-width">
+          <mat-label>Input text</mat-label>
+          <input matInput placeholder="Ex. Lorem" value="Lorem ipsum" />
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field class="example-full-width">
+          <mat-label>Input password</mat-label>
+          <input
+            matInput
+            type="password"
+            placeholder="Ex. Lorem"
+            value="Lorem ipsum"
+          />
+        </mat-form-field>
+      </p>
+
+      <p>
+        <mat-form-field class="example-full-width">
+          <mat-label>Input date</mat-label>
+          <input
+            matInput
+            type="date"
+            placeholder="Ex. Lorem"
+            value="Lorem ipsum"
+          />
+        </mat-form-field>
       </p>
       <p>
-        <input type="password" placeholder="Input password" />
+        <mat-form-field class="example-full-width">
+          <mat-label>Select dropdown</mat-label>
+          <mat-select>
+            <mat-option value="1">
+              1
+            </mat-option>
+            <mat-option value="2">
+              2
+            </mat-option>
+          </mat-select>
+        </mat-form-field>
       </p>
+
       <p>
-        <input type="text" class="js-date" placeholder="Input date" />
+        <mat-form-field class="example-full-width">
+          <mat-label>Textarea</mat-label>
+          <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+        </mat-form-field>
       </p>
-      <p>
-        <select>
-          <option>Default dropdown</option>
-          <option value="1">option 1</option>
-          <option value="2">option 2</option>
-        </select>
-      </p>
-      <p>
-        <select class="js-select">
-          <option>Customized dropdown</option>
-          <option value="1">Slow</option>
-          <option value="2">Medium</option>
-          <option>Fast</option>
-          <option>Faster</option>
-        </select>
-      </p>
-      <p>
-        <textarea placeholder="Textarea"></textarea>
-      </p>
+
       <p>
         <mat-radio-group>
           <mat-radio-button>
@@ -84,26 +100,27 @@
         <mat-checkbox>Checked</mat-checkbox>
       </p>
       <p>
-        <a href="javascript:void(0);" class="btn">Link as button</a>
-        <a href="javascript:void(0);" class="btn disabled"
+        <a mat-button href="javascript:void(0);">Link as button</a>
+        <a mat-button disabled href="javascript:void(0);"
           >Link as button disabled</a
-        ><a href="javascript:void(0);" class="btn active"
-          >Link as button active</a
         >
       </p>
       <p>
-        <input type="button" value="Button" /><input
-          type="button"
-          value="Button disabled"
-          disabled="disabled"
-        />
+        <button mat-raised-button color="primary">Button Primary</button>&nbsp;
+        <button mat-raised-button color="accent">Button Accent</button>&nbsp;
+        <button mat-button mat-raised-button>Button transparent</button>&nbsp;
       </p>
       <p>
-        <input type="submit" value="Submit" /><input
-          type="submit"
-          value="Submit disabled"
-          disabled="disabled"
-        />
+        Progress bar<br /><br />
+
+        <mat-progress-bar
+          class="example-margin"
+          color="primary"
+          mode="determinate"
+          value="50"
+          bufferValue="75"
+        >
+        </mat-progress-bar>
       </p>
     </mat-card-content>
   </mat-card>

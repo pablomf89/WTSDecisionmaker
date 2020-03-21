@@ -40,7 +40,7 @@ import { MatSortModule } from "@angular/material/sort";
 import { MatCheckboxModule } from "@angular/material/checkbox";
 import { MatPaginatorModule } from "@angular/material/paginator";
 import { MatButtonModule } from "@angular/material/button";
-
+import { MatBadgeModule } from "@angular/material/badge";
 @NgModule({
   declarations: [
     AppComponent,
@@ -81,7 +81,8 @@ import { MatButtonModule } from "@angular/material/button";
     MatTableModule,
     MatSortModule,
     MatPaginatorModule,
-    MatButtonModule
+    MatButtonModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
