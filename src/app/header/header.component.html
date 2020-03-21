@@ -1,10 +1,43 @@
 <div class="header">
-  <div class="inner">
-    <div class="logo-container">
-      <img style="max-width: 200px;" src="assets/images/wts-global-logo.svg" />
-    </div>
-    <div class="user-container">
-      USer
-    </div>
-  </div>
+  <mat-toolbar>
+    <img style="max-width: 200px;" src="assets/images/wts-global-logo.svg" />
+    <span style="flex: 1 1 auto;"></span>
+    <button mat-button>
+      <mat-icon
+        class="example-icon"
+        aria-hidden="false"
+        aria-label="Example delete icon"
+        >account_circle</mat-icon
+      >
+    </button>
+  </mat-toolbar>
+
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-button>Dashboard</button>
+      <button mat-button>DMN models</button>
+      <button mat-button>Reportings</button>
+      <button mat-button>Upload</button>
+      <button mat-button>Release</button>
+
+      <span style="flex: 1 1 auto;"></span>
+      <button mat-button>
+        <mat-icon
+          class="example-icon"
+          aria-hidden="false"
+          aria-label="Example heart icon"
+          >favorite</mat-icon
+        >
+      </button>
+
+      <button mat-button>
+        <mat-icon
+          class="example-icon"
+          aria-hidden="false"
+          aria-label="Example delete icon"
+          >delete</mat-icon
+        >
+      </button>
+    </mat-toolbar-row>
+  </mat-toolbar>
 </div>

@@ -1,17 +1,17 @@
 /*colors*/
 $primary-color: #c03 !default !default;
-$active-color: #00698e !default;
+$active-color: #333333 !default;
 $font-color: #333333 !default;
-$box-colour: #e9ecef !default; 
+$box-colour: #e9ecef !default;
 //$red: #F30501 !default;
 //$green:#5f9a13 !default;
-$warning-color:#d3a400 !default;
-$success-color:#4dbd74 !default;
-$default-color:#666 !default;
-$error-color:#f86c6b !default;
-$info-color:#2987df !default;
+$warning-color: #d3a400 !default;
+$success-color: #4dbd74 !default;
+$default-color: #666 !default;
+$error-color: #f86c6b !default;
+$info-color: #2987df !default;
 
-$white:    #fff !default;
+$white: #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
@@ -21,40 +21,39 @@ $gray-600: #060707 !default;
 $gray-700: #495057 !default;
 $gray-800: #343a40 !default;
 $gray-900: #212529 !default;
-$black:    #000 !default;
+$black: #000 !default;
 
-$blue:    #007bff !default;
-$indigo:  #6610f2 !default;
-$purple:  #6f42c1 !default;
-$pink:    #e83e8c !default;
-$red:     #dc3545 !default;
-$orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
-$green:   #28a745 !default;
-$teal:    #20c997 !default;
-$cyan:    #17a2b8 !default;
+$blue: #007bff !default;
+$indigo: #6610f2 !default;
+$purple: #6f42c1 !default;
+$pink: #e83e8c !default;
+$red: #dc3545 !default;
+$orange: #fd7e14 !default;
+$yellow: #ffc107 !default;
+$green: #28a745 !default;
+$teal: #20c997 !default;
+$cyan: #17a2b8 !default;
 
 /*margins and paddings*/
 $global-padding: 10px !default;
 $global-margin: 10px !default;
 
 /*border*/
-$global-border: 1px solid #CCC !default;
-$dashed-border: 1px dashed #CCC !default;
+$global-border: 1px solid #ccc !default;
+$dashed-border: 1px dashed #ccc !default;
 $border-radius: 0.25rem;
 
 /*media queries breakpoints*/
 $desktop: 1280px !default;
 $laptop: 1024px !default;
 $tablet: 960px !default;
-$big-mobile:700px !default;
+$big-mobile: 700px !default;
 $mobile: 640px !default;
 $small-mobile: 400px !default;
 
 /*aspect ratios*/
 $image-aspect: 63.54% !default; /*960*610*/
 $banner-aspect: 27.08% !default; /*1920*520*/
-
 
 /*fonts*/
 $global-font-family: Arial !default;
@@ -64,21 +63,32 @@ $global-line-height: 18px !default;
 
 $small-font-size: 11px !default;
 
-.global-font { font-family: $global-font-family; font-size: $global-font-size; line-height: $global-line-height; font-weight: 400; color: $font-color;  }
-.headers { color: $primary-color; margin: 0 0 $global-margin*2 0; font-weight: 400; font-family: $special-font-family; }
+.global-font {
+  font-family: $global-font-family;
+  font-size: $global-font-size;
+  line-height: $global-line-height;
+  font-weight: 400;
+  color: $font-color;
+}
+.headers {
+  color: $primary-color;
+  margin: 0 0 $global-margin * 2 0;
+  font-weight: 400;
+  font-family: $special-font-family;
+}
 
-$transition:.3s;
+$transition: 0.3s;
 
-:export{
-    primary-color:$primary-color;
-    active-color:$active-color;
-    warning-color:$warning-color;
-    success-color:$success-color;
-    error-color:$error-color;
-    box-colour:$box-colour;
-    font-color:$font-color;
-    default-color:$default-color;
-   /* blue:$blue;
+:export {
+  primary-color: $primary-color;
+  active-color: $active-color;
+  warning-color: $warning-color;
+  success-color: $success-color;
+  error-color: $error-color;
+  box-colour: $box-colour;
+  font-color: $font-color;
+  default-color: $default-color;
+  /* blue:$blue;
     indigo:$indigo;
     purple:$purple;
     pink:$pink;
@@ -88,15 +98,15 @@ $transition:.3s;
     green:$green;
     teal:$teal;
     cyan:$cyan;*/
-    white:$white;
-    gray-100:$gray-100;
-    gray-200:$gray-200;
-    gray-300:$gray-300;
-    gray-400:$gray-400;
-    gray-500:$gray-500;
-    gray-600:$gray-600;
-    gray-700:$gray-700;
-    gray-800:$gray-800;
-    gray-900:$gray-900;
-    black:$black;
+  white: $white;
+  gray-100: $gray-100;
+  gray-200: $gray-200;
+  gray-300: $gray-300;
+  gray-400: $gray-400;
+  gray-500: $gray-500;
+  gray-600: $gray-600;
+  gray-700: $gray-700;
+  gray-800: $gray-800;
+  gray-900: $gray-900;
+  black: $black;
 }
