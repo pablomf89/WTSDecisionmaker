@@ -1,5 +1,5 @@
 html {scroll-behavior: smooth;}
-body { margin: 0; font-family: $global-font-family;}
+body { margin: 0; font-family: $global-font-family; min-width: 480px; }
 strong {}
 ol, ul { margin: 0 0 $global-margin*2  $global-margin*2; padding: 0; }
 li { margin-bottom: $global-margin/2;  }
