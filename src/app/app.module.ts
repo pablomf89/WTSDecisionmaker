@@ -46,12 +46,16 @@ import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
 import { WizardComponent } from "./wizard/wizard.component";
 import { LoginComponent } from "./login/login.component";
+import { ResetPasswordComponent } from "./reset-password/reset-password.component";
+import { ForgottenPasswordComponent } from "./forgottenPassword/forgottenPassword.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
   { path: "global", component: GlobalElementsComponent },
   { path: "wizard", component: WizardComponent },
   { path: "login", component: LoginComponent },
+  { path: "forgottenPassword", component: ForgottenPasswordComponent },
+  { path: "reset-password", component: ResetPasswordComponent }
 ];
 
 @NgModule({
@@ -63,6 +67,8 @@ const appRoutes: Routes = [
     HomeComponent,
     WizardComponent,
     LoginComponent,
+    ForgottenPasswordComponent,
+    ResetPasswordComponent
   ],
   imports: [
     RouterModule.forRoot(
