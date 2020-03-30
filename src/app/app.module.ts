@@ -45,11 +45,13 @@ import { MatBadgeModule } from "@angular/material/badge";
 import { RouterModule, Routes } from "@angular/router";
 import { HomeComponent } from "./home/home.component";
 import { WizardComponent } from "./wizard/wizard.component";
+import { LoginComponent } from "./login/login.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
   { path: "global", component: GlobalElementsComponent },
-  { path: "wizard", component: WizardComponent }
+  { path: "wizard", component: WizardComponent },
+  { path: "login", component: LoginComponent },
 ];
 
 @NgModule({
@@ -59,7 +61,8 @@ const appRoutes: Routes = [
     FooterComponent,
     GlobalElementsComponent,
     HomeComponent,
-    WizardComponent
+    WizardComponent,
+    LoginComponent,
   ],
   imports: [
     RouterModule.forRoot(
