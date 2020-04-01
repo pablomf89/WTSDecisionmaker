@@ -1,0 +1,10 @@
+.header .mat-accordion {
+  z-index: 1;
+}
+.header .mat-accordion > .mat-expansion-panel-spacing:first-child {
+  margin-top: 65px;
+}
+
+.header .mat-accordion .mat-raised-button.mat-primary {
+  margin: 0 5px;
+}
