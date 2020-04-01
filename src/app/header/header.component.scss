@@ -5,6 +5,6 @@
   margin-top: 65px;
 }
 
-.header .mat-accordion .mat-raised-button.mat-primary {
-  margin: 0 5px;
+.header .mat-accordion .mat-raised-button.mat-primary:first-child {
+  margin-right: 10px;
 }
