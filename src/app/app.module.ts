@@ -48,6 +48,9 @@ import { WizardComponent } from "./wizard/wizard.component";
 import { LoginComponent } from "./login/login.component";
 import { ResetPasswordComponent } from "./reset-password/reset-password.component";
 import { ForgottenPasswordComponent } from "./forgottenPassword/forgottenPassword.component";
+import { DecisionsComponent } from "./decisions/decisions.component";
+import { DecisionDetailsComponent } from "./decision-details/decision-details.component";
+import { DecisionEditComponent } from "./decision-edit/decision-edit.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
@@ -55,7 +58,10 @@ const appRoutes: Routes = [
   { path: "wizard", component: WizardComponent },
   { path: "login", component: LoginComponent },
   { path: "forgottenPassword", component: ForgottenPasswordComponent },
-  { path: "reset-password", component: ResetPasswordComponent }
+  { path: "reset-password", component: ResetPasswordComponent },
+  { path: "decisions", component: DecisionsComponent },
+  { path: "decision-details", component: DecisionDetailsComponent },
+  { path: "decision-edit", component: DecisionEditComponent }
 ];
 
 @NgModule({
@@ -68,7 +74,10 @@ const appRoutes: Routes = [
     WizardComponent,
     LoginComponent,
     ForgottenPasswordComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    DecisionsComponent,
+    DecisionDetailsComponent,
+    DecisionEditComponent
   ],
   imports: [
     RouterModule.forRoot(
