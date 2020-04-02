@@ -1,0 +1,11 @@
+span {
+  width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+.detail-name {
+  font-weight: bold;
+}
