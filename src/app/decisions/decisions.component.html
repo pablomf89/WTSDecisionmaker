@@ -1,0 +1,73 @@
+<div class="decisions">
+  <div class="inner">
+    <h2>DMN Models</h2>
+  </div>
+  <div class="file-upload-container">
+    <div class="inner">
+      <mat-card class="upload-file-card">
+        <div class="header">
+          <span>Upload Decision</span>
+        </div>
+        <!-- <div class="upload">
+          <input type="file" placeholder="Choose File" />
+        </div> -->
+
+        <div class="uploadfilecontainer" (click)="fileInput.click()" appDragDrop (onFileDropped)="uploadFile($event)">
+          <input hidden type="file" #fileInput (change)="uploadFile($event.target.files)">
+        </div>
+
+      </mat-card>
+    </div>
+  </div>
+
+  <div class="decision-list-container">
+    <div class="inner">
+      <mat-card class="decision-list-card">
+        <mat-list>
+          <mat-list-item>
+            <div class="header">
+              <span>Name</span>
+              <span>Category</span>
+              <span>Description</span>
+              <span>Owner</span>
+              <span>Status</span>
+            </div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <!-- <ng-container *ngFor="let decision of decisions"> -->
+          <ng-container>
+            <!-- <mat-list-item (click)="navigateToDetail(decision.id)"> -->
+            <mat-list-item  [routerLink]="['/decision-details']">
+              <div class="decision">
+                <span>TT-Aufsichtsratvergütung</span>
+                <span>Value added taxes</span>
+                <span>Placeholder description</span>
+                <span>Placeholder owner</span>
+                <span>DRAFT</span>
+              </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="decision">
+                <span>TT-Aufsichtsratvergütung</span>
+                <span>Value added taxes</span>
+                <span>Placeholder description</span>
+                <span>Placeholder owner</span>
+                <span>DRAFT</span>
+              </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item>
+              <div class="decision">
+                <span>TT-Aufsichtsratvergütung</span>
+                <span>Value added taxes</span>
+                <span>Placeholder description</span>
+                <span>Placeholder owner</span>
+                <span>DRAFT</span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+        </mat-list>
+    </mat-card>
+  </div>
+</div>

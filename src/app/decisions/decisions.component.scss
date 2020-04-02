@@ -1,0 +1,85 @@
+.decision-list-container {
+  padding: 0;
+  width: 100%;
+}
+.decision-list-card {
+  padding: 16px 0 16px 0;
+}
+.upload-file-card {
+  width: 33%;
+  margin: 0 auto;
+}
+
+.header,
+.decision,
+.upload {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header span {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.decision {
+  font-size: 14px;
+}
+
+mat-list-item:not(:first-child) {
+  cursor: pointer;
+
+  &:hover {
+    background-color: lightgrey;
+  }
+}
+
+span {
+  width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+::ng-deep .error-snackbar {
+  background: #fb003c;
+  color: black;
+}
+::ng-deep .mat-simple-snackbar-action {
+  color: black;
+}
+
+::ng-deep .success-snackbar {
+  background: #35fd53;
+  color: black;
+}
+
+// .file-upload-container {
+//   margin-bottom: 50px;
+// }
+.file-upload-container .header {
+  margin-bottom: 20px;
+}
+
+
+
+.uploadfilecontainer {
+  background-image: url("../../assets/images/cloud-icon.png");
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: center;
+  height: 75px;
+  width: 80%;
+  margin: 20px auto;
+  border: 2px dashed #9ecbec;
+  border-radius: 10px;
+}
+
+.uploadfilecontainer:hover {
+  cursor: pointer;
+  background-color: #9ecbec !important;
+  opacity: 0.8;
+}
