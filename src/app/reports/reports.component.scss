@@ -1,0 +1,54 @@
+.list-container {
+  padding: 0;
+  width: 100%;
+}
+.list-card {
+  padding: 16px 0 16px 0;
+}
+
+.header,
+.report,
+.upload {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.header span {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.report {
+  font-size: 14px;
+}
+
+mat-list-item:not(:first-child) {
+  cursor: pointer;
+
+  &:hover {
+    background-color: lightgrey;
+  }
+}
+
+span {
+  width: 200px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+::ng-deep .error-snackbar {
+  background: #fb003c;
+  color: black;
+}
+::ng-deep .mat-simple-snackbar-action {
+  color: black;
+}
+
+::ng-deep .success-snackbar {
+  background: #35fd53;
+  color: black;
+}

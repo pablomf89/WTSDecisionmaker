@@ -1,0 +1,52 @@
+<div class="reports">
+  <div class="inner">
+    <h2>Reports</h2>
+  </div>
+
+  <div class="list-container">
+    <div class="inner">
+      <mat-card class="list-card">
+        <mat-list>
+          <mat-list-item>
+            <div class="header">
+              <span>Name</span>
+              <span>Date</span>
+              <span>User</span>
+              <span>Ref. No.</span>
+            </div>
+          </mat-list-item>
+          <mat-divider></mat-divider>
+          <!-- <ng-container *ngFor="let report of reports"> -->
+          <ng-container>
+            <!-- <mat-list-item (click)="navigateToDetail(report.id)"> -->
+            <mat-list-item [routerLink]="['/report-details']">
+              <div class="report">
+                <span>TT-Aufsichtsratvergütung</span>
+                <span>2020-03-23T11:44:36</span>
+                <span>User, Dummy</span>
+                <span></span>
+              </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item [routerLink]="['/report-details']">
+              <div class="report">
+                <span>TT-Aufsichtsratvergütung</span>
+                <span>2020-03-23T11:44:36</span>
+                <span>User, Dummy</span>
+                <span></span>
+              </div>
+            </mat-list-item>
+            <mat-divider></mat-divider>
+            <mat-list-item [routerLink]="['/report-details']">
+              <div class="report">
+                <span>TT-Aufsichtsratvergütung</span>
+                <span>2020-03-23T11:44:36</span>
+                <span>User, Dummy</span>
+                <span></span>
+              </div>
+            </mat-list-item>
+          </ng-container>
+        </mat-list>
+    </mat-card>
+  </div>
+</div>
