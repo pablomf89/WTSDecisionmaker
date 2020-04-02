@@ -1,0 +1,90 @@
+<div class="decisions">
+  <div class="inner">
+    <h2>Edit DMN</h2>
+  </div>
+
+  <div class="decision-details-container">
+    <div class="inner">
+      <mat-card class="decision-details-card">
+        <div class="box-4">
+          <div class="inner">
+            <p>
+              <mat-form-field class="example-full-width">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="TT-Aufsichtsratvergütung" value="TT-Aufsichtsratvergütung" />
+              </mat-form-field>
+            </p>
+            <p>
+              <mat-form-field class="example-full-width">
+                <mat-label>Description</mat-label>
+                <textarea matInput placeholder="Placeholder description..."
+                  value="Placeholder description..."></textarea>
+              </mat-form-field>
+            </p>
+          </div>
+        </div>
+        <div class="box-4">
+          <div class="inner">
+            <p>
+              <mat-form-field class="example-full-width">
+                <mat-label>Category</mat-label>
+                <mat-select value="1">
+                  <mat-option value="1">
+                    Value added taxes
+                  </mat-option>
+                  <mat-option value="2">
+                    Category example 1
+                  </mat-option>
+                  <mat-option value="2">
+                    Category example 2
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </p>
+            <p>
+              <mat-form-field class="example-full-width">
+                <mat-label>Owner</mat-label>
+                <mat-select value="1">
+                  <mat-option value="1">
+                    User 1
+                  </mat-option>
+                  <mat-option value="2">
+                    User 2
+                  </mat-option>
+                  <mat-option value="2">
+                    User 3
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </p>
+          </div>
+        </div>
+
+        <div class="box-4">
+          <div class="inner">
+            <p>
+              <mat-form-field class="example-full-width">
+                <mat-label>Status</mat-label>
+                <mat-select value="2">
+                  <mat-option value="1">
+                    ACTIVE
+                  </mat-option>
+                  <mat-option value="2">
+                    DRAFT
+                  </mat-option>
+                </mat-select>
+              </mat-form-field>
+            </p>
+          </div>
+        </div>
+        <div class="box-12">
+          <div class="inner">
+            <button mat-raised-button color="primary" [routerLink]="['/decision-details']">Save</button>&nbsp;
+            <button mat-button mat-raised-button [routerLink]="['/decision-details']">Discard</button>&nbsp;
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </mat-card>
+    </div>
+  </div>
+</div>
