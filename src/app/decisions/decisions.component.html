@@ -20,9 +20,9 @@
     </div>
   </div>
 
-  <div class="decision-list-container">
+  <div class="list-container">
     <div class="inner">
-      <mat-card class="decision-list-card">
+      <mat-card class="list-card">
         <mat-list>
           <mat-list-item>
             <div class="header">
@@ -37,7 +37,7 @@
           <!-- <ng-container *ngFor="let decision of decisions"> -->
           <ng-container>
             <!-- <mat-list-item (click)="navigateToDetail(decision.id)"> -->
-            <mat-list-item  [routerLink]="['/decision-details']">
+            <mat-list-item [routerLink]="['/decision-details']">
               <div class="decision">
                 <span>TT-Aufsichtsratvergütung</span>
                 <span>Value added taxes</span>
@@ -47,7 +47,7 @@
               </div>
             </mat-list-item>
             <mat-divider></mat-divider>
-            <mat-list-item>
+            <mat-list-item [routerLink]="['/decision-details']">
               <div class="decision">
                 <span>TT-Aufsichtsratvergütung</span>
                 <span>Value added taxes</span>
@@ -57,7 +57,7 @@
               </div>
             </mat-list-item>
             <mat-divider></mat-divider>
-            <mat-list-item>
+            <mat-list-item [routerLink]="['/decision-details']">
               <div class="decision">
                 <span>TT-Aufsichtsratvergütung</span>
                 <span>Value added taxes</span>
