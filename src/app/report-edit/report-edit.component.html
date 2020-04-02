@@ -1,0 +1,51 @@
+<div class="report">
+  <div class="inner">
+    <h2>Edit Report</h2>
+  </div>
+
+  <div class="details-container">
+    <div class="inner">
+      <mat-card class="details-card">
+        <div class="box-4">
+          <div class="inner">
+            <p>
+              <mat-form-field class="example-full-width">
+                <mat-label>Name</mat-label>
+                <input matInput placeholder="TT-Aufsichtsratvergütung" value="TT-Aufsichtsratvergütung" />
+              </mat-form-field>
+            </p>
+            <p>
+              <mat-form-field class="example-full-width">
+                <mat-label>Date</mat-label>
+                <input matInput type="date" placeholder="Ex. Lorem" value="Lorem ipsum" />
+              </mat-form-field>
+            </p>
+          </div>
+        </div>
+        <div class="box-4">
+          <div class="inner">
+            <p>
+              <mat-form-field class="example-full-width">
+                <mat-label>User</mat-label>
+                <input matInput placeholder="User, Dummy" value="User, Dummy" />
+              </mat-form-field>
+            </p>
+            <p>
+              <mat-form-field class="example-full-width">
+                <mat-label>Ref. No.</mat-label>
+                <input matInput placeholder="" value="" />
+              </mat-form-field>
+            </p>
+          </div>
+        </div>
+        <div class="box-12">
+          <div class="inner">
+            <button mat-raised-button color="primary" [routerLink]="['/report-details']">Save</button>&nbsp;
+            <button mat-button mat-raised-button [routerLink]="['/report-details']">Discard</button>&nbsp;
+          </div>
+        </div>
+        <div class="clearfix"></div>
+      </mat-card>
+    </div>
+  </div>
+</div>
