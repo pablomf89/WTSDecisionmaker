@@ -51,6 +51,9 @@ import { ForgottenPasswordComponent } from "./forgottenPassword/forgottenPasswor
 import { DecisionsComponent } from "./decisions/decisions.component";
 import { DecisionDetailsComponent } from "./decision-details/decision-details.component";
 import { DecisionEditComponent } from "./decision-edit/decision-edit.component";
+import { ReportsComponent } from "./reports/reports.component";
+import { ReportDetailsComponent } from "./report-details/report-details.component";
+import { ReportEditComponent } from "./report-edit/report-edit.component";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 const appRoutes: Routes = [
   { path: "", component: HomeComponent },
@@ -61,7 +64,10 @@ const appRoutes: Routes = [
   { path: "reset-password", component: ResetPasswordComponent },
   { path: "decisions", component: DecisionsComponent },
   { path: "decision-details", component: DecisionDetailsComponent },
-  { path: "decision-edit", component: DecisionEditComponent }
+  { path: "decision-edit", component: DecisionEditComponent },
+  { path: "reports", component: ReportsComponent },
+  { path: "report-details", component: ReportDetailsComponent },
+  { path: "report-edit", component: ReportEditComponent }
 ];
 
 @NgModule({
@@ -77,7 +83,10 @@ const appRoutes: Routes = [
     ResetPasswordComponent,
     DecisionsComponent,
     DecisionDetailsComponent,
-    DecisionEditComponent
+    DecisionEditComponent,
+    ReportsComponent,
+    ReportDetailsComponent,
+    ReportEditComponent
   ],
   imports: [
     RouterModule.forRoot(
