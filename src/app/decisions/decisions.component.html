@@ -2,25 +2,19 @@
   <div class="inner">
     <h2>DMN Models</h2>
   </div>
-  <div class="file-upload-container">
-    <div class="inner">
-      <mat-card class="upload-file-card">
-        <div class="header">
-          <span>Upload Decision</span>
-        </div>
-        <!-- <div class="upload">
-          <input type="file" placeholder="Choose File" />
-        </div> -->
-
-        <div class="uploadfilecontainer" (click)="fileInput.click()" appDragDrop (onFileDropped)="uploadFile($event)">
-          <input hidden type="file" #fileInput (change)="uploadFile($event.target.files)">
-        </div>
-
-      </mat-card>
-    </div>
-  </div>
 
   <div class="list-container">
+    <!---->
+    <div class="actions">
+      <div class="inner">
+
+        <button mat-raised-button color="primary" (click)="openUploadDialog()">Upload</button>
+        <button mat-raised-button color="primary" (click)="openUploadDialog()">Search</button>
+        <button mat-raised-button color="primary" (click)="openUploadDialog()">Filter</button>
+        <button mat-raised-button color="primary" (click)="openUploadDialog()">Sort</button>
+      </div>
+    </div>
+    <!---->
     <div class="inner">
       <mat-card class="list-card">
         <mat-list>
@@ -68,6 +62,6 @@
             </mat-list-item>
           </ng-container>
         </mat-list>
-    </mat-card>
+      </mat-card>
+    </div>
   </div>
-</div>

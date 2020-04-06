@@ -1,0 +1,51 @@
+
+.upload-file-card {
+  margin: 0 auto;
+}
+
+.header,
+.upload {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+::ng-deep .error-snackbar {
+  background: #fb003c;
+  color: black;
+}
+::ng-deep .mat-simple-snackbar-action {
+  color: black;
+}
+
+::ng-deep .success-snackbar {
+  background: #35fd53;
+  color: black;
+}
+
+// .file-upload-container {
+//   margin-bottom: 50px;
+// }
+.file-upload-container .header {
+  margin-bottom: 20px;
+}
+
+
+
+.uploadfilecontainer {
+  background-image: url("../../../../assets/images/cloud-icon.png");
+  background-repeat: no-repeat;
+  background-size: 60px;
+  background-position: center;
+  height: 75px;
+  width: 80%;
+  margin: 20px auto;
+  border: 2px dashed #9ecbec;
+  border-radius: 10px;
+}
+
+.uploadfilecontainer:hover {
+  cursor: pointer;
+  background-color: #9ecbec !important;
+  opacity: 0.8;
+}

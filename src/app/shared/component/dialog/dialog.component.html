@@ -1,0 +1,18 @@
+<!-- <h1 mat-dialog-title>111111{{data.name}}222222</h1> -->
+<h1 mat-dialog-title>Upload DMN file</h1>
+<div mat-dialog-content>
+  <div class="file-upload-container">
+    <div class="inner">
+        <!-- <div class="header">
+          <span>Upload Decision</span>
+        </div> -->
+        <div class="uploadfilecontainer" (click)="fileInput.click()" appDragDrop (onFileDropped)="uploadFile($event)">
+          <input hidden type="file" #fileInput (change)="uploadFile($event.target.files)">
+        </div>
+    </div>
+  </div>
+</div>
+<div mat-dialog-actions>
+  <button mat-raised-button (click)="onNoClick()">Close</button>
+</div>
+

@@ -2,23 +2,31 @@ import { Component, OnInit } from "@angular/core";
 import { Directive, Output, Input, EventEmitter, HostBinding, HostListener } from '@angular/core';
 import {
 } from "@angular/forms";
-
-import { ActivatedRoute, Router } from '@angular/router';
-//import { AuthService } from '../auth.service';
-
+import {MatDialog} from '@angular/material/dialog';
+import {UploadDialogComponent} from "../shared/component/dialog/dialog.component";
 
 @Component({
   selector: "app-decisions",
   templateUrl: "./decisions.component.html",
   styleUrls: ["./decisions.component.scss"]
 })
-// @Directive({
-//   selector: '[app-decisions]'
-// })
 
 export class DecisionsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public dialog: MatDialog) { }
+
+  openUploadDialog(): void {
+    const dialogRef = this.dialog.open(UploadDialogComponent, {
+      width: '500px',
+      height: '300px',
+      //data: {name: "TESTNAME"}
+
+    });
+
+    dialogRef.afterClosed().subscribe(result => {
+      console.log('The dialog was closed');
+    });
+  }
 
   async ngOnInit() {
   }
@@ -56,14 +64,6 @@ export class DecisionsComponent implements OnInit {
     }
   }
 
-  files: any = [];
-
-  uploadFile(event) {
-    for (let index = 0; index < event.length; index++) {
-      const element = event[index];
-      this.files.push(element.name)
-    }
-  }
 
 
 }
