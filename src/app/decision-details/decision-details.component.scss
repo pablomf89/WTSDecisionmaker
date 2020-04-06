@@ -1,3 +1,4 @@
+@import "../../assets/styles/_variables.scss";
 span {
   width: 200px;
   text-overflow: ellipsis;
@@ -8,4 +9,8 @@ span {
 
 .detail-name {
   font-weight: bold;
+}
+
+@media (max-width: $mobile) {
+.details-card .inner {margin-bottom: 0;padding-bottom: 0;margin-top: 0;padding-top: 0;}
 }

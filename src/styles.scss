@@ -160,9 +160,11 @@ body.alternative-theme {background:whitesmoke;}
 body.dark-theme {
   background: #333;
 }
+
+.dark-theme .mat-card,
 .dark-theme .mat-stepper-horizontal, .dark-theme .mat-stepper-vertical,
 .dark-theme .mat-card {
-  background: #323130;
+  background: #424242;
 }
 
 .dark-theme,
