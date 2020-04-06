@@ -1,0 +1,45 @@
+.calendar{width:100%; border-radius: $border-radius; border: $global-border; overflow: hidden; background: $box-colour; background: #FFF; padding: 5px; }
+
+
+.calendar .btn { margin: 0;  border-radius: 0; }
+
+.calendar .tile { @extend .btn-grey; }
+.calendar .tile:hover,
+.calendar .tile:focus,
+.calendar .tile.active { @extend .btn; }
+
+.calendar .month-view-weekdays { display: flex; }
+.calendar .month-view-weekdays abbr { text-decoration: none; }
+
+.calendar .navigation { display: flex; flex-wrap: wrap;}
+.calendar .navigation .month-title { flex-grow: 1; }
+
+.calendar .month-view-weekdays  { display: flex;flex-wrap: wrap; }
+.calendar .month-view-weekdays .weekday { flex-basis: 14.2857%; max-width: 14.2857%; overflow: hidden; text-align: center; padding: $global-padding; }
+
+.month-view-days { display: flex; flex-wrap: wrap; }
+.calendar .month-view-days .tile { border-color: transparent !important;  flex-basis: 14.2857%; max-width: 14.2857%; overflow: hidden; text-align: center; padding: $global-padding; }
+
+.calendar .day.other-month{ opacity: 0.5; }
+.calendar .day.today { border-color:  $gray-500 !important; }
+.calendar .day.today:hover,
+.calendar .day.today:focus,
+.calendar .day.today.active { @extend .btn; }
+
+
+.input-date-calendar-wrapper { max-width: 350px; position: fixed; top: 100%; left: 0; z-index: 3;}
+
+// .calendar-month-view-weekdays{text-align:center;text-transform:uppercase;font-weight:700;font-size:.75em;}
+// .calendar-month-view-weekdays-weekday{padding:.5em;}
+// .calendar-month-view-weekNumbers{font-weight:700;}
+// .calendar-month-view-weekNumbers .calendar-tile{display:flex;align-items:center;justify-content:center;font-size:.75em;padding:calc(0.75em/0.75) calc(0.5em/0.75);}
+// .calendar .day.weekend{color:#d10000;}
+// .calendar .day.other-month{color:#757575;}
+// .calendar-year-view .calendar-tile,.calendar-decade-view .calendar-tile,.calendar-century-view .calendar-tile{padding:2em .5em;}
+// .calendar-tile{max-width:100%;text-align:center;background:none;padding:.75em .5em;}
+// .calendar-tile:disabled{background-color:#f0f0f0;}
+// .calendar-tile.hasActive{background:#76baff;}
+// .calendar-tile.hasActive:enabled:hover,.calendar-tile.hasActive:enabled:focus{background:#a9d4ff;}
+// .calendar-tile.active{background:#006edc;color:#FFF;}
+// .calendar-tile.active:enabled:hover,.calendar-tile.active:enabled:focus{background:#1087ff;}
+// .calendar-tile:enabled:hover,.calendar-tile:enabled:focus,.calendar.selectRange .calendar-tile.hover{background-color:#e6e6e6;}

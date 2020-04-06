@@ -1,0 +1,30 @@
+.alphabetical-menu-container{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+.alphabetical-menu-letter-section{
+    float: left;
+    list-style-type: none;
+    padding: 1em;
+    width: calc(100%/6);
+
+    &>a:first-letter{
+        text-transform: uppercase;
+    }
+
+}
+
+
+@media (max-width: $tablet) {
+    .alphabetical-menu-letter-section{
+        width: calc(100%/3);
+    }
+  }
+
+  @media (max-width: $mobile) {
+    .alphabetical-menu-letter-section{
+        width: 50%;
+    }
+  }

@@ -1,0 +1,123 @@
+.modal-header {padding: $global-padding $global-padding*2;}
+.modal-body {padding: $global-padding $global-padding*2;}
+.modal-footer {padding: $global-padding $global-padding*2;}
+.modal-wrapper{
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    left:0;
+    background-color: rgba(0,0,0,0.7);
+    display: none;
+    z-index: 2;
+}
+
+.modal-wrapper.modal-open{
+    display: block;
+}
+
+
+.modal-box{
+    background-color: #FFF;
+    position: fixed;
+    top:50%;
+    left:50%;
+    width:50em;
+    transform: translate(-50%, -100%);
+    display: flex;
+    max-width: 80vw;
+    overflow-y: auto;
+    flex-direction: column;
+    max-height: 80vh;
+    height: auto;
+    visibility: hidden ;
+    z-index: 2;
+}
+
+.modal-box.modal-open{
+    visibility: visible ;
+    transform: translate(-50%, -50%);
+    transition: transform 0.5s;
+}
+
+.modal-header{
+    position: relative;
+    border-bottom: 1px solid #ccc;
+    background-color:$gray-500;
+}
+
+.modal-close-icon{
+    position: absolute;
+    right: 1em;
+    top:1em;
+    cursor: pointer;
+}
+
+.modal-body{
+    overflow-y: auto;
+    overflow-x: auto;
+    flex:1 1 auto;
+}
+
+.modal-footer{
+    border-top:1px solid #ccc;
+}
+
+.modal-box.fixed-right{
+    top: 0;
+    height: 100vh;
+    max-height: 100vh;
+    right: 0;
+    left: auto;
+    transform: translate(100%, 0);
+    z-index: 2;
+    transition: transform 0.5s;
+}
+
+.modal-box.fixed-left{
+    top: 0;
+    height: 100vh;
+    max-height: 100vh;
+    left: 0;
+    right: auto;
+    transform: translate(-100%, 0);
+    z-index: 2;
+    transition: transform 0.5s;
+}
+
+.modal-box.fixed-bottom{
+    bottom:0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    top: auto;
+    max-width: 100%;
+    transform: translate(0%, 100%);
+    z-index: 2;
+    transition: transform 0.5s;
+}
+
+.modal-box.fixed-top{
+    top:0;
+    left: 0;
+    right: 0;
+    bottom: auto;
+    width: 100%;
+    max-width: 100%;    
+    transform: translate(0%, -100%);
+    z-index: 2;
+    transition: transform 0.5s;
+}
+
+.modal-box.fixed-right.modal-open, .modal-box.fixed-left.modal-open, .modal-box.fixed-top.modal-open, .modal-box.fixed-bottom.modal-open{
+    transform: translate(0, 0);
+    transition: transform 0.5s;
+}
+
+
+@media(max-width:$mobile){
+    .modal-box{
+        width:100%;
+    }
+
+}

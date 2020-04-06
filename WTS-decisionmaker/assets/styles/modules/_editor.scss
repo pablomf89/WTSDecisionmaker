@@ -1,0 +1,68 @@
+.editor-content{
+    background-color: $white;
+    min-height: 300px;
+    padding: $global-padding/2;
+}
+.editor-toolbar{
+    border-bottom:$global-border;
+    background-color: $primary-color;
+    padding: $global-padding - 2;
+}
+
+.editor-container{
+    border:$global-border;
+    border-radius:$border-radius;
+}
+
+.editor-commands > button{
+    margin: 0;
+    border-radius: 0%;
+}
+
+.editor-btn-tooltip > .tooltip-item > button{
+    margin: 0;
+    border-radius: 0%;
+}
+
+.td-table-picker{
+    margin: 0;
+    padding: 0;
+}
+.td-table-picker-selected{
+   background-color:$active-color;
+}
+
+.btn-table-picker{
+    margin: 0;
+    padding: 8px;
+    background-color: transparent;
+}
+
+.btn-color{
+    border:$global-border;
+    margin-right: $global-margin/2;
+    padding: $global-padding;
+}
+
+.btn-color:hover{
+    filter: brightness(110%);
+}
+
+.btn-headering{
+    padding: $global-padding; 
+    background: transparent;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    margin-bottom: 3px;
+}
+.btn-headering:hover{
+    background: $primary-color;
+    color: $white;
+}
+
+#editor blockquote{
+    margin: 0 0 0 40px !important;
+    border: none !important;
+    padding: 0px !important;
+}
+

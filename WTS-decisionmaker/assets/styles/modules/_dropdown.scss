@@ -1,0 +1,6 @@
+.dropdown{ margin-bottom: $global-margin; }
+.dropdown-menu{ z-index: 1; position: absolute; min-width: 160px; padding: $global-padding/2 0; margin: 0; text-align: left; list-style: none; background-color:$white; background-clip: padding-box; border: $global-border; border-radius: $border-radius; }
+.dropdown-item{  border-bottom: $global-border; margin: 0;  }
+.dropdown-item a  { padding: $global-padding; display: block;   }
+.dropdown-icon{ margin-left: $global-margin; font-family: 'Font Awesome 5 Free'; font-weight: 900; -webkit-font-smoothing: antialiased; display: inline-block; font-style: normal;   font-feature-settings: normal; font-variant: normal; text-rendering: auto; line-height: 1; }
+.dropdown-icon::before{ content: "\f107"; }
